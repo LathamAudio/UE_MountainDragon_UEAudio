@@ -1,0 +1,62 @@
+# Ignore everything by default
+*
+
+# Allow tracking this .gitignore file
+!/.gitignore
+
+# Unreal Engine essentials (modify these to track only your changes)
+!*.uproject
+!Config/**/*
+!Source/**/*
+!Plugins/**/Config/**/*
+!Plugins/**/Source/**/*
+
+# Ignore existing Content folder but allow new files
+Content/*
+!Content/.gitkeep  # Placeholder to ensure the folder is included in Git
+
+# Ignore generated, built, and temporary files
+DerivedDataCache/
+Intermediate/
+Saved/
+Binaries/
+Build/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.ipch
+*.aps
+*.ncb
+*.log
+*.tlog
+*.VC.db
+*.VC.opendb
+*.dll
+*.pdb
+*.exe
+*.app
+*.dSYM/
+*.bak
+*.tmp
+*.csv
+*.obj
+*.pyc
+*.lock
+*.class
+
+# Ignore Unreal Engine auto-generated project files
+.vscode/
+.idea/
+.vs/
+Makefile
+CMakeLists.txt
+*.xcodeproj/
+*.xcworkspace/
+
+# Ignore system-specific files
+Thumbs.db
+.DS_Store
+
+# Ignore Unreal Project File
+UE_MTNDragon_Audio.uproject
